@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Massage Königin | Erotische Massagen & Rituale | Ansfelden</title>
+<meta name="description" content="Exklusive erotische Massagen in Ansfelden. Tantra, Nuru, Sinnliche Ganzkörpermassage & Domina-Rituale. Nur nach Vereinbarung. Ab 18 Jahren.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black:   #0D0B0A;
+    --deep:    #1A1714;
+    --taupe:   #2A2520;
+    --gold:    #C9A96E;
+    --gold-lt: #DEC28D;
+    --ivory:   #F2EDE6;
+    --muted:   #9E9189;
+    --white:   #FAF8F5;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--black);
+    color: var(--ivory);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ── NAVIGATION ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1.5rem 4rem;
+    background: linear-gradient(to bottom, rgba(13,11,10,0.95) 0%, transparent 100%);
+    transition: background 0.4s;
+  }
+  nav.scrolled {
+    background: rgba(13,11,10,0.97);
+    border-bottom: 1px solid rgba(201,169,110,0.15);
+  }
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.35rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a {
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta {
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--black);
+    background: var(--gold);
+    padding: 0.6rem 1.6rem;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+  }
+  .nav-cta:hover { background: var(--gold-lt); transform: translateY(-1px); }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: var(--black);
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 60% 80% at 70% 50%, rgba(201,169,110,0.06) 0%, transparent 65%),
+      radial-gradient(ellipse 40% 60% at 20% 80%, rgba(201,169,110,0.04) 0%, transparent 60%);
+  }
+  .hero-lines {
+    position: absolute; inset: 0; opacity: 0.03;
+    background-image: repeating-linear-gradient(
+      0deg, transparent, transparent 79px, rgba(201,169,110,1) 80px
+    );
+  }
+  .hero-content {
+    position: relative; z-index: 2;
+    text-align: center;
+    max-width: 780px;
+    padding: 2rem;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: heroFadeIn 1.4s cubic-bezier(0.25,0.46,0.45,0.94) 0.3s forwards;
+  }
+  @keyframes heroFadeIn {
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .hero-eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 2rem;
+    display: flex; align-items: center; justify-content: center; gap: 1.2rem;
+  }
+  .hero-eyebrow::before, .hero-eyebrow::after {
+    content: '';
+    display: block;
+    width: 40px; height: 1px;
+    background: var(--gold);
+    opacity: 0.5;
+  }
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3.5rem, 9vw, 7.5rem);
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.2rem;
+    color: var(--ivory);
+  }
+  .hero-title em {
+    font-style: italic;
+    color: var(--gold);
+  }
+  .hero-sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    font-style: italic;
+    color: var(--muted);
+    margin: 1.5rem 0 3rem;
+    font-weight: 300;
+  }
+  .hero-actions { display: flex; gap: 1.2rem; justify-content: center; flex-wrap: wrap; }
+  .btn-primary {
+    display: inline-block;
+    padding: 1rem 2.6rem;
+    background: var(--gold);
+    color: var(--black);
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  }
+  .btn-primary:hover {
+    background: var(--gold-lt);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(201,169,110,0.25);
+  }
+  .btn-ghost {
+    display: inline-block;
+    padding: 1rem 2.6rem;
+    border: 1px solid rgba(201,169,110,0.4);
+    color: var(--gold);
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 400;
+    transition: border-color 0.3s, background 0.3s, transform 0.2s;
+  }
+  .btn-ghost:hover {
+    border-color: var(--gold);
+    background: rgba(201,169,110,0.07);
+    transform: translateY(-2px);
+  }
+  .hero-scroll {
+    position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%);
+    display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+    color: var(--muted); font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase;
+  }
+  .hero-scroll-line {
+    width: 1px; height: 50px;
+    background: linear-gradient(to bottom, var(--gold), transparent);
+    animation: scrollPulse 2s ease-in-out infinite;
+  }
+  @keyframes scrollPulse {
+    0%, 100% { opacity: 0.3; transform: scaleY(1); }
+    50% { opacity: 0.8; transform: scaleY(1.1); }
+  }
+
+  /* ── ORNAMENT DIVIDER ── */
+  .ornament {
+    display: flex; align-items: center; justify-content: center;
+    gap: 1.5rem; padding: 1rem 0;
+    opacity: 0.6;
+  }
+  .ornament-line { flex: 1; max-width: 120px; height: 1px; background: linear-gradient(to right, transparent, var(--gold)); }
+  .ornament-line.r { background: linear-gradient(to left, transparent, var(--gold)); }
+  .ornament-diamond {
+    width: 8px; height: 8px;
+    border: 1px solid var(--gold);
+    transform: rotate(45deg);
+    position: relative;
+  }
+  .ornament-diamond::before {
+    content: ''; position: absolute; inset: 2px;
+    background: var(--gold); opacity: 0.5;
+    transform: rotate(0deg);
+  }
+
+  /* ── SECTIONS ── */
+  section { padding: 7rem 4rem; }
+
+  .section-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.2rem;
+  }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 300;
+    line-height: 1.1;
+    color: var(--ivory);
+    margin-bottom: 1.5rem;
+  }
+  .section-title em { font-style: italic; color: var(--gold); }
+
+  .section-body {
+    font-size: 0.95rem;
+    color: var(--muted);
+    max-width: 580px;
+    line-height: 1.9;
+  }
+
+  /* ── INTRO TWO-COL ── */
+  .intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+  .intro-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.4;
+    color: var(--ivory);
+    border-left: 1px solid var(--gold);
+    padding-left: 2rem;
+  }
+  .intro-quote span { color: var(--gold); }
+
+  /* ── MASSEURIN CARD ── */
+  .masseurin-section { background: var(--deep); }
+  .masseurin-grid {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 5rem;
+    align-items: start;
+  }
+  .masseurin-card {
+    background: var(--taupe);
+    padding: 2.5rem;
+    border: 1px solid rgba(201,169,110,0.12);
+    position: relative;
+  }
+  .masseurin-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0;
+    width: 60px; height: 2px;
+    background: var(--gold);
+  }
+  .masseurin-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--ivory);
+    margin-bottom: 0.3rem;
+  }
+  .masseurin-age {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+  }
+  .masseurin-tags {
+    display: flex; flex-wrap: wrap; gap: 0.5rem;
+    margin-top: 1.5rem;
+  }
+  .tag {
+    font-size: 0.62rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    border: 1px solid rgba(201,169,110,0.2);
+    padding: 0.35rem 0.8rem;
+  }
+  .masseurin-note {
+    margin-top: 2rem;
+    padding: 1.2rem;
+    background: rgba(201,169,110,0.06);
+    border-left: 2px solid var(--gold);
+    font-size: 0.8rem;
+    color: var(--muted);
+    font-style: italic;
+    line-height: 1.7;
+  }
+  .contact-block {
+    margin-top: 2rem;
+  }
+  .contact-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+  .contact-tel {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    color: var(--ivory);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: color 0.3s;
+  }
+  .contact-tel:hover { color: var(--gold); }
+
+  /* ── LEISTUNGEN ── */
+  .leistungen-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5px;
+    background: rgba(201,169,110,0.08);
+    margin-top: 3.5rem;
+  }
+  .leistung-item {
+    background: var(--black);
+    padding: 2.5rem 2rem;
+    transition: background 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  .leistung-item::after {
+    content: '';
+    position: absolute; bottom: 0; left: 0;
+    width: 0; height: 1px;
+    background: var(--gold);
+    transition: width 0.4s cubic-bezier(0.25,0.46,0.45,0.94);
+  }
+  .leistung-item:hover { background: var(--taupe); }
+  .leistung-item:hover::after { width: 100%; }
+  .leistung-nr {
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    opacity: 0.5;
+    margin-bottom: 1rem;
+  }
+  .leistung-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--ivory);
+    margin-bottom: 0.8rem;
+    line-height: 1.2;
+  }
+  .leistung-desc {
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.75;
+  }
+
+  /* ── PREISE ── */
+  .preise-section { background: var(--deep); }
+  .preise-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: rgba(201,169,110,0.1);
+    margin-top: 3.5rem;
+  }
+  .preis-card {
+    background: var(--black);
+    padding: 2.5rem 1.8rem;
+    text-align: center;
+    position: relative;
+    transition: background 0.3s;
+  }
+  .preis-card.featured {
+    background: var(--taupe);
+  }
+  .preis-card.featured::before {
+    content: 'Beliebt';
+    position: absolute; top: -1px; left: 50%; transform: translateX(-50%);
+    background: var(--gold);
+    color: var(--black);
+    font-size: 0.58rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 0.3rem 1rem;
+    font-weight: 500;
+  }
+  .preis-dauer {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1rem;
+  }
+  .preis-wert {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .preis-wert sup {
+    font-size: 1.2rem;
+    vertical-align: super;
+    font-weight: 400;
+  }
+  .preis-hint {
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-top: 1rem;
+    line-height: 1.6;
+  }
+  .preis-extras {
+    margin-top: 3rem;
+    display: flex; flex-direction: column; gap: 0.8rem;
+  }
+  .preis-extra-row {
+    display: flex; justify-content: space-between; align-items: center;
+    border-bottom: 1px solid rgba(201,169,110,0.1);
+    padding-bottom: 0.8rem;
+    font-size: 0.85rem;
+  }
+  .preis-extra-row .name { color: var(--ivory); }
+  .preis-extra-row .val { color: var(--gold); font-family: 'Cormorant Garamond', serif; font-size: 1rem; }
+
+  /* ── INFO STRIP ── */
+  .info-strip {
+    background: var(--taupe);
+    border-top: 1px solid rgba(201,169,110,0.15);
+    border-bottom: 1px solid rgba(201,169,110,0.15);
+    padding: 1.5rem 4rem;
+  }
+  .info-strip-inner {
+    max-width: 1100px; margin: 0 auto;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 1.5rem;
+  }
+  .info-item { text-align: center; }
+  .info-item-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.3rem;
+  }
+  .info-item-val {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    color: var(--ivory);
+  }
+
+  /* ── USPs ── */
+  .usps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 3.5rem;
+  }
+  .usp-item {
+    display: flex; flex-direction: column; gap: 0.8rem;
+  }
+  .usp-icon {
+    font-size: 1.4rem;
+    color: var(--gold);
+  }
+  .usp-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    color: var(--ivory);
+  }
+  .usp-body { font-size: 0.85rem; color: var(--muted); line-height: 1.8; }
+
+  /* ── CTA SECTION ── */
+  .cta-section {
+    text-align: center;
+    background: var(--black);
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-section::before {
+    content: 'MK';
+    position: absolute;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30vw;
+    font-style: italic;
+    color: rgba(201,169,110,0.025);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    letter-spacing: -0.05em;
+    white-space: nowrap;
+  }
+  .cta-section .section-title { max-width: 600px; margin: 0 auto 1.5rem; }
+  .cta-section .section-body { margin: 0 auto 2.5rem; text-align: center; }
+
+  /* ── JOBS ── */
+  .jobs-section { background: var(--deep); }
+  .jobs-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    background: var(--taupe);
+    padding: 3.5rem;
+    border: 1px solid rgba(201,169,110,0.1);
+    margin-top: 3.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .jobs-card::before {
+    content: '';
+    position: absolute; right: 0; top: 0;
+    width: 3px; height: 100%;
+    background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+  }
+  .jobs-list { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
+  .jobs-list li {
+    font-size: 0.85rem;
+    color: var(--muted);
+    padding-left: 1.2rem;
+    position: relative;
+  }
+  .jobs-list li::before {
+    content: '–';
+    position: absolute; left: 0;
+    color: var(--gold);
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--black);
+    border-top: 1px solid rgba(201,169,110,0.12);
+    padding: 3.5rem 4rem 2rem;
+  }
+  .footer-inner {
+    max-width: 1100px; margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 3rem;
+  }
+  .footer-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    margin-bottom: 0.8rem;
+  }
+  .footer-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.8; }
+  .footer-col-title {
+    font-size: 0.62rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.2rem;
+  }
+  .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+  .footer-links a {
+    font-size: 0.82rem;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .footer-links a:hover { color: var(--ivory); }
+  .footer-contact { font-size: 0.82rem; color: var(--muted); line-height: 1.9; }
+  .footer-contact a { color: var(--muted); text-decoration: none; transition: color 0.3s; }
+  .footer-contact a:hover { color: var(--gold); }
+  .footer-bottom {
+    max-width: 1100px; margin: 0 auto;
+    display: flex; justify-content: space-between; align-items: center;
+    border-top: 1px solid rgba(201,169,110,0.1);
+    padding-top: 1.5rem;
+    font-size: 0.7rem;
+    color: rgba(158,145,137,0.5);
+  }
+  .footer-legal { display: flex; gap: 1.5rem; }
+  .footer-legal a { color: rgba(158,145,137,0.5); text-decoration: none; transition: color 0.3s; }
+  .footer-legal a:hover { color: var(--muted); }
+  .footer-18 {
+    font-size: 0.65rem;
+    color: var(--gold);
+    opacity: 0.6;
+    border: 1px solid rgba(201,169,110,0.2);
+    padding: 0.2rem 0.6rem;
+    letter-spacing: 0.1em;
+  }
+
+  /* ── SCROLL REVEAL ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.8s cubic-bezier(0.25,0.46,0.45,0.94);
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* ── HAMBURGER (mobile) ── */
+  .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+  .nav-hamburger span { display: block; width: 24px; height: 1px; background: var(--gold); transition: 0.3s; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 960px) {
+    nav { padding: 1.2rem 2rem; }
+    .nav-links { display: none; }
+    .nav-links.open {
+      display: flex; flex-direction: column;
+      position: absolute; top: 100%; left: 0; right: 0;
+      background: rgba(13,11,10,0.98);
+      padding: 1.5rem 2rem; gap: 1.2rem;
+      border-bottom: 1px solid rgba(201,169,110,0.15);
+    }
+    .nav-hamburger { display: flex; }
+    .nav-cta { display: none; }
+
+    section { padding: 5rem 2rem; }
+    .intro-grid, .masseurin-grid, .jobs-card { grid-template-columns: 1fr; gap: 2.5rem; }
+    .leistungen-grid, .usps-grid { grid-template-columns: 1fr; }
+    .preise-grid { grid-template-columns: 1fr 1fr; }
+    .footer-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .footer { padding: 3rem 2rem 1.5rem; }
+    .info-strip { padding: 1.5rem 2rem; }
+    .info-strip-inner { justify-content: center; }
+    .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+  }
+
+  @media (max-width: 600px) {
+    .preise-grid { grid-template-columns: 1fr; }
+    .hero-actions { flex-direction: column; align-items: center; }
+  }
+
+  /* ── DEMO BANNER ── */
+  .demo-banner {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 9999;
+    background: var(--gold);
+    color: var(--black);
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 0.6rem 2rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    font-weight: 500;
+  }
+  .demo-banner-left {
+    display: flex; align-items: center; gap: 1rem;
+  }
+  .demo-badge {
+    background: var(--black);
+    color: var(--gold);
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.6rem;
+    font-weight: 500;
+  }
+  .demo-banner a {
+    background: var(--black);
+    color: var(--gold);
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 0.4rem 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+    white-space: nowrap;
+  }
+  .demo-banner a:hover { opacity: 0.8; }
+  body { padding-top: 36px; }
+
+  @media (max-width: 600px) {
+    .demo-banner { flex-direction: column; gap: 0.4rem; padding: 0.6rem 1rem; text-align: center; }
+    body { padding-top: 64px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- DEMO BANNER -->
+<div class="demo-banner">
+  <div class="demo-banner-left">
+    <span class="demo-badge">Demo</span>
+    <span>Diese Website wurde von <strong>Matei Systems</strong> erstellt &mdash; kostenlos & unverbindlich</span>
+  </div>
+  <a href="https://matei.systems">Seite anfragen &rarr;</a>
+</div>
+
+<!-- NAVIGATION -->
+<nav id="mainNav">
+  <a href="#" class="nav-logo">Massage Königin</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#leistungen">Leistungen</a></li>
+    <li><a href="#masseurin">Masseurin</a></li>
+    <li><a href="#preise">Preise</a></li>
+    <li><a href="#jobs">Jobs</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+  <a href="tel:+436607412657" class="nav-cta">Termin sichern</a>
+  <div class="nav-hamburger" id="hamburger" aria-label="Menü öffnen">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" aria-label="Hero">
+  <div class="hero-bg"></div>
+  <div class="hero-lines"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Ansfelden · Oberösterreich</p>
+    <h1 class="hero-title">Massage<br><em>Königin</em></h1>
+    <p class="hero-sub">Erotische Massagen & Rituale auf höchstem Niveau</p>
+    <div class="hero-actions">
+      <a href="tel:+436607412657" class="btn-primary">Termin vereinbaren</a>
+      <a href="#leistungen" class="btn-ghost">Leistungen entdecken</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+<!-- INFO STRIP -->
+<div class="info-strip">
+  <div class="info-strip-inner">
+    <div class="info-item">
+      <div class="info-item-label">Öffnungszeiten</div>
+      <div class="info-item-val">Mo – So, 9 – 21 Uhr</div>
+    </div>
+    <div class="info-item">
+      <div class="info-item-label">Termin</div>
+      <div class="info-item-val">Nur nach Vereinbarung</div>
+    </div>
+    <div class="info-item">
+      <div class="info-item-label">Adresse</div>
+      <div class="info-item-val">Haiderstraße 38, 4052 Ansfelden</div>
+    </div>
+    <div class="info-item">
+      <div class="info-item-label">Kontakt</div>
+      <div class="info-item-val"><a href="tel:+436607412657" style="color:inherit;text-decoration:none;">+43 660 741 26 57</a></div>
+    </div>
+    <div class="footer-18">18+</div>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section id="intro" style="background: var(--black);">
+  <div class="section-inner">
+    <div class="intro-grid reveal">
+      <div class="intro-quote">
+        "Lass den Alltag los und tauche ein in eine Welt der achtsamen Berührung und <span>tiefen Entspannung.</span>"
+      </div>
+      <div>
+        <p class="section-label">Willkommen</p>
+        <p class="section-body">
+          Jede Massage bei Massage Königin ist ein individuelles Erlebnis – abgestimmt auf dich, deinen Körper und deine Bedürfnisse. In einem stilvollen, diskreten Rahmen findest du Ruhe, Wärme und echte Nähe.
+        </p>
+        <br>
+        <p class="section-body">
+          Ob sinnliche Entspannung, tantrische Energie­arbeit oder exklusivere Rituale – hier gestalten wir gemeinsam deinen Moment.
+        </p>
+        <br>
+        <div class="ornament" style="justify-content: flex-start; opacity:0.5; padding: 0.5rem 0;">
+          <div class="ornament-line" style="max-width:80px;"></div>
+          <div class="ornament-diamond"></div>
+        </div>
+        <p class="section-body" style="margin-top:1rem; font-size:0.78rem; font-style:italic;">
+          Diskretion, Hygiene und Respekt sind selbstverständlich. Kein GV oder OV.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MASSEURIN -->
+<section class="masseurin-section" id="masseurin">
+  <div class="section-inner">
+    <div class="masseurin-grid">
+      <div class="masseurin-card reveal">
+        <div class="masseurin-name">Sylvia</div>
+        <div class="masseurin-age">Gastmasseurin · 37 Jahre</div>
+        <p style="font-size:0.85rem; color:var(--muted); line-height:1.8;">
+          Meine Tantra-Massagen lassen dich und deinen ganzen Körper von Kopf bis Fuß in eine andere Welt eintauchen. In meiner tantrischen Ganzkörpermassage wird jedes Körperteil durch liebevolle Berührung verehrt.
+        </p>
+        <div class="masseurin-tags">
+          <span class="tag">Tantra</span>
+          <span class="tag">Lingam</span>
+          <span class="tag">Körpermassage</span>
+          <span class="tag">Diskret</span>
+        </div>
+        <div class="masseurin-note">
+          Ganz nach indisch-tantrischer Tradition ist eine Lingam-Massage inbegriffen. Du bist frei von Leistungsdruck und darfst einfach nur genießen.
+        </div>
+        <div class="contact-block">
+          <div class="contact-label">Terminvereinbarung (nur telefonisch)</div>
+          <a href="tel:+4367763959010" class="contact-tel">+43 677 639 59 010</a>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:0.15s;">
+        <p class="section-label">Deine Masseurin</p>
+        <h2 class="section-title">Eine Traum&shy;begegnung für den <em>anspruchsvollen</em> Mann</h2>
+        <p class="section-body">
+          Sylvia steht für Feingefühl, Erfahrung und Intuition. Bei ihr entsteht ein Raum für Vertrauen, Entspannung und echte Nähe – individuell gestaltet, mit viel Zeit und Herz.
+        </p>
+        <br>
+        <div class="usps-grid" style="grid-template-columns:1fr; gap:1.2rem; margin-top:0;">
+          <div class="usp-item" style="flex-direction:row; align-items:flex-start; gap:1rem;">
+            <div style="width:1px; height:40px; background:var(--gold); margin-top:4px; flex-shrink:0;"></div>
+            <div>
+              <div class="usp-title" style="font-size:1.1rem;">Individuell</div>
+              <div class="usp-body">Jede Session wird auf deinen Körper und deine Wünsche abgestimmt.</div>
+            </div>
+          </div>
+          <div class="usp-item" style="flex-direction:row; align-items:flex-start; gap:1rem;">
+            <div style="width:1px; height:40px; background:var(--gold); margin-top:4px; flex-shrink:0;"></div>
+            <div>
+              <div class="usp-title" style="font-size:1.1rem;">Achtsam</div>
+              <div class="usp-body">Bewusste Berührung, die wirklich ankommt – ohne Eile, ohne Standard­programme.</div>
+            </div>
+          </div>
+          <div class="usp-item" style="flex-direction:row; align-items:flex-start; gap:1rem;">
+            <div style="width:1px; height:40px; background:var(--gold); margin-top:4px; flex-shrink:0;"></div>
+            <div>
+              <div class="usp-title" style="font-size:1.1rem;">Exklusiv</div>
+              <div class="usp-body">Nur nach Voranmeldung, nur für dich – ein Raum der vollständigen Diskretion.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEISTUNGEN -->
+<section id="leistungen" style="background:var(--black);">
+  <div class="section-inner">
+    <div class="reveal">
+      <p class="section-label">Massagerituale</p>
+      <h2 class="section-title">Hier beginnt<br>deine <em>Auszeit</em></h2>
+      <p class="section-body">
+        Wähle aus verschiedenen Ritualen und erlebe Entspannung, Sinnlichkeit und achtsame Berührung. Jede Behandlung wird individuell auf dich abgestimmt.
+      </p>
+    </div>
+    <div class="leistungen-grid">
+      <div class="leistung-item reveal">
+        <div class="leistung-nr">01</div>
+        <div class="leistung-name">Klassische Entspannungs­massage</div>
+        <div class="leistung-desc">Sanfte, fließende Berührungen mit warmem Öl lösen Verspannungen, beruhigen den Geist und bringen dich in tiefen Zustand der Ruhe.</div>
+      </div>
+      <div class="leistung-item reveal" style="transition-delay:0.08s;">
+        <div class="leistung-nr">02</div>
+        <div class="leistung-name">Sinnliche Ganzkörper­massage</div>
+        <div class="leistung-desc">Langsame, bewusste Berührungen lassen dich deinen Körper neu spüren – Wärme, Nähe und vollkommenes Loslassen.</div>
+      </div>
+      <div class="leistung-item reveal" style="transition-delay:0.16s;">
+        <div class="leistung-nr">03</div>
+        <div class="leistung-name">Tantra Massage</div>
+        <div class="leistung-desc">Eine achtsame Reise durch Berührung, Atmung und Energiearbeit. Verbindet Körper und Bewusstsein in einem Raum für Vertrauen und intensive Wahrnehmung.</div>
+      </div>
+      <div class="leistung-item reveal" style="transition-delay:0.08s;">
+        <div class="leistung-nr">04</div>
+        <div class="leistung-name">Nuru Body-to-Body Ritual</div>
+        <div class="leistung-desc">Warme, fließende Bewegungen mit seidigem Nuru-Gel. Intensive Nähe und ein unvergleichliches Körpergefühl.</div>
+      </div>
+      <div class="leistung-item reveal" style="transition-delay:0.16s;">
+        <div class="leistung-nr">05</div>
+        <div class="leistung-name">Domina & Fessel-Rituale</div>
+        <div class="leistung-desc">Für Gäste, die Kontrolle abgeben und Vertrauen spüren möchten – neue Erfahrungen in einem stilvollen und sicheren Rahmen.</div>
+      </div>
+      <div class="leistung-item reveal" style="transition-delay:0.24s;">
+        <div class="leistung-nr">06</div>
+        <div class="leistung-name">Paar­massage</div>
+        <div class="leistung-desc">Ein besonderes Erlebnis für zwei Menschen, die gemeinsam entspannen und sich neu begegnen möchten. Auf Anfrage.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PREISE -->
+<section class="preise-section" id="preise">
+  <div class="section-inner">
+    <div class="reveal">
+      <p class="section-label">Investition</p>
+      <h2 class="section-title">Zeit & <em>Preise</em></h2>
+      <p class="section-body">Längere Sessions ermöglichen ein intensiveres Erlebnis – Körper, Geist und Energie in vollkommenem Einklang.</p>
+    </div>
+    <div class="preise-grid reveal">
+      <div class="preis-card">
+        <div class="preis-dauer">60 Minuten</div>
+        <div class="preis-wert"><sup>€</sup>120</div>
+        <div class="preis-hint">Klassisches Ritual</div>
+      </div>
+      <div class="preis-card">
+        <div class="preis-dauer">90 Minuten</div>
+        <div class="preis-wert"><sup>€</sup>180</div>
+        <div class="preis-hint">Vertieftes Erlebnis</div>
+      </div>
+      <div class="preis-card featured">
+        <div class="preis-dauer">120 Minuten</div>
+        <div class="preis-wert"><sup>€</sup>240</div>
+        <div class="preis-hint">Maximale Tiefe & vollständiges Loslassen</div>
+      </div>
+      <div class="preis-card" style="display:flex;flex-direction:column;justify-content:center;">
+        <div class="preis-dauer">Dauer nach Wunsch</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--gold);margin-top:0.5rem;">Individuelle Absprache</div>
+        <div class="preis-hint">Spreche mich einfach an</div>
+      </div>
+    </div>
+    <div class="preis-extras reveal">
+      <div class="preis-extra-row">
+        <span class="name">Nuru Body-to-Body Ritual</span>
+        <span class="val">+ € 40</span>
+      </div>
+      <div class="preis-extra-row">
+        <span class="name">Domina & Fessel-Rituale</span>
+        <span class="val">ab + € 60</span>
+      </div>
+      <div class="preis-extra-row">
+        <span class="name">Paar­massage</span>
+        <span class="val">auf Anfrage</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOBS -->
+<section class="jobs-section" id="jobs">
+  <div class="section-inner">
+    <p class="section-label reveal">Karriere</p>
+    <h2 class="section-title reveal">Interesse an<br>einem <em>Job?</em></h2>
+    <div class="jobs-card reveal">
+      <div>
+        <p style="font-size:0.95rem; color:var(--muted); line-height:1.85; margin-bottom:1.5rem;">
+          Ich habe regelmäßig freie Massage-Räumlichkeiten, die du selbstständig mitnutzen kannst. Voll ausgestattete Massage-Plätze, an denen du deine Tätigkeit mit oder ohne Ausbildung ausüben kannst.
+        </p>
+        <a href="mailto:massage.koenigin@gmail.com" class="btn-ghost" style="display:inline-block;">Jetzt bewerben</a>
+      </div>
+      <ul class="jobs-list">
+        <li>Selbstständige Tätigkeit, flexible Zeiteinteilung</li>
+        <li>Vollausgestattete, stilvolle Räumlichkeiten</li>
+        <li>Guter Nebenverdienst</li>
+        <li>Einschulung inklusive</li>
+        <li>Kein Vorwissen nötig</li>
+        <li>Diskrete, professionelle Umgebung</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="kontakt">
+  <div class="section-inner" style="position:relative;z-index:2;">
+    <div class="reveal">
+      <p class="section-label" style="text-align:center;">Bereit?</p>
+      <h2 class="section-title" style="text-align:center;">Gönn dir deine<br>persönliche <em>Auszeit</em></h2>
+      <p class="section-body" style="text-align:center;">Termine ausschließlich nach telefonischer Vereinbarung. SMS und WhatsApp willkommen.</p>
+      <div style="margin-top:2.5rem; display:flex; gap:1.2rem; justify-content:center; flex-wrap:wrap;">
+        <a href="tel:+436607412657" class="btn-primary">+43 660 741 26 57</a>
+        <a href="mailto:massage.koenigin@gmail.com" class="btn-ghost">E-Mail schreiben</a>
+      </div>
+      <div class="ornament" style="margin-top:3.5rem;">
+        <div class="ornament-line"></div>
+        <div class="ornament-diamond"></div>
+        <div class="ornament-diamond" style="transform:rotate(45deg) scale(0.6); margin: 0 -0.5rem;"></div>
+        <div class="ornament-diamond"></div>
+        <div class="ornament-line r"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Massage Königin</div>
+      <p class="footer-desc">Erotische Massagen & Rituale auf höchstem Niveau. Diskret, individuell, exklusiv. Nur nach Voranmeldung. Ausschließlich für Personen ab 18 Jahren.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Navigation</div>
+      <ul class="footer-links">
+        <li><a href="#leistungen">Leistungen</a></li>
+        <li><a href="#masseurin">Masseurin</a></li>
+        <li><a href="#preise">Preise</a></li>
+        <li><a href="#jobs">Jobs</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </div>
+    <div id="kontakt-info">
+      <div class="footer-col-title">Kontakt & Standort</div>
+      <div class="footer-contact">
+        Haiderstraße 38<br>
+        4052 Ansfelden<br><br>
+        <a href="tel:+436607412657">+43 660 741 26 57</a><br>
+        <a href="mailto:massage.koenigin@gmail.com">massage.koenigin@gmail.com</a><br><br>
+        Mo – So: 09:00 – 21:00 Uhr
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Massage Königin · Ansfelden</span>
+    <div class="footer-legal">
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutz</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll effect
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // Hamburger
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => navLinks.classList.remove('open'));
+  });
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
